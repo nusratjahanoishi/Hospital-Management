@@ -1,0 +1,178 @@
+# Hospital Management System  
+
+<p align="center">
+    <a href="https://github.com/nusratjahanoishi/Hospital-Management/actions">
+      <img alt="Tests Passing" src="https://github.com/nusratjahanoishi/Hospital-Management/workflows/Test/badge.svg" />
+    </a>
+    <a href="https://github.com/nusratjahanoishi/Hospital-Management/graphs/contributors">
+      <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/nusratjahanoishi/Hospital-Management" />
+    </a>
+    <a href="https://github.com/nusratjahanoishi/Hospital-Management/graphs/traffic">
+      <img alt="Repo View" src="https://komarev.com/ghpvc/?username=nusratjahanoishi&label=Profile%20views&color=0e75b6&style=flat" />
+    </a>
+    <a href="https://github.com/nusratjahanoishi/Hospital-Management/issues">
+      <img alt="Issues" src="https://img.shields.io/github/issues/nusratjahanoishi/Hospital-Management?color=0088ff" />
+    </a>
+    <a href="https://github.com/nusratjahanoishi/Hospital-Management/pulls">
+      <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/nusratjahanoishi/Hospital-Management?color=0088ff" />
+    </a>
+</p>
+
+![Hospital Management System](https://repository-images.githubusercontent.com/911555839/fb8b47ff-0716-4b53-82d5-3b16c6d9f87f)  
+
+The **Hospital Management System** is a complete multi-hospital management solution designed to streamline hospital operations and enhance patient care. Built with **PHP** and **MySQL**, this system is scalable, user-friendly, and optimized for seamless hospital workflows.  
+
+---
+
+## Table of Contents  
+
+- [👥 Team Members](#-team-members)  
+- [📄 Project Overview](#-project-overview)  
+- [🛠️ Tech Stack](#%EF%B8%8F-tech-stack)  
+- [🚀 Project Features](#-project-features)  
+- [🔗 API Endpoints](#-api-endpoints)  
+- [📅 Milestones](#-milestones)  
+- [🌐 Demo](#-demo)  
+- [🤝 Contributing](#-contributing)  
+- [📜 License](#-license)  
+- [📞 Contact](#-contact)  
+
+---
+
+## **👥 Team Members**  
+
+| Name                     | ID           | Email                         | Role                           |
+|---------------------------|--------------|-------------------------------|--------------------------------|
+| Nusrat Jahan Oishi        | 20220104127  | nusratjahanoishi@gmail.com    | Full-stack Developer          |
+| Sumaiya Islam Daina       | 20220104115  | sumaiyaislamdaina@gmail.com   | Front-end Developer            |
+| Asif Radoan               | 20220104114  | asif.radoan@gmail.com         | Front-end Developer           |
+
+---
+
+## **📄 Project Overview**  
+
+### **Objective**  
+To build a reliable, efficient, and secure platform to manage multi-hospital operations, including patient records, staff management, appointments, and billing.  
+
+### **Target Audience**  
+Hospitals, clinics, and healthcare administrators looking for a streamlined digital management system.  
+
+### **Key Features and Benefits**  
+- **🩺 Patient Management**: Centralized repository for patient information, medical history, and prescriptions.  
+- **👩‍⚕️ Staff Management**: Easy allocation and management of staff roles and schedules.  
+- **📅 Appointment Scheduling**: Optimized booking system for patients and doctors.  
+- **💳 Billing and Payment**: Automated billing system for quick and accurate invoices.  
+- **📊 Reports and Analytics**: Generate insightful reports to assist in decision-making.  
+
+---
+
+## **🛠️ Tech Stack**  
+
+| Component       | Technology              |
+|------------------|--------------------------|
+| **Frontend**    | HTML, CSS, JavaScript   |
+| **Backend**     | PHP                     |
+| **Database**    | MySQL                   |
+| **Framework**   | Laravel (Optional)      |
+| **Deployment**  | XAMPP/WAMP for local servers |
+
+---
+
+## **🚀 Project Features**  
+
+### **Admin Panel**  
+- Add, edit, and delete hospitals, staff, and departments.  
+- Monitor system usage and performance.  
+- Generate system-wide reports.  
+
+### **Hospital Management Features**  
+
+#### **Doctors**  
+- Schedule management.  
+- Patient interaction history.  
+- Prescription and test record management.  
+
+#### **Patients**  
+- Online appointment booking.  
+- Medical history access.  
+- View and download bills.  
+
+#### **Pharmacy**  
+- Medicine inventory management.  
+- Prescription-based medicine dispensing.  
+
+#### **Billing System**  
+- Generate invoices automatically.  
+- Manage online and offline payments.  
+
+---
+
+## **🔗 API Endpoints**  
+
+| Method | Endpoint                    | Description                            |
+|--------|------------------------------|----------------------------------------|
+| GET    | `/api/v1/patients/:id`      | Fetch patient information by ID        |
+| POST   | `/api/v1/patients`          | Add a new patient                      |
+| PUT    | `/api/v1/patients/:id`      | Update an existing patient entry       |
+| DELETE | `/api/v1/patients/:id`      | Remove a patient                       |
+| POST   | `/api/v1/appointments`      | Book an appointment                    |
+| GET    | `/api/v1/appointments/:id`  | Fetch appointment details              |
+| POST   | `/api/v1/billing`           | Generate a new bill                    |
+| GET    | `/api/v1/billing/:id`       | View billing details                   |
+
+---
+
+## **📅 Milestones**  
+
+### **Phase 1**  
+- Define database schema.  
+- Develop user authentication and role-based access control.  
+
+### **Phase 2**  
+- Implement patient and staff management features.  
+- Create appointment scheduling and billing modules.  
+
+### **Phase 3**  
+- Optimize system performance.  
+- Add analytics and reporting features.  
+
+---
+
+## **🌐 Demo**  
+
+Check out the live demo of the system at: [Hospital Management System](http://localhost/Hospital-Management)  
+
+---
+
+## **🤝 Contributing**  
+
+Contributions are welcome!  
+1. Fork this repository.  
+2. Create a new branch (`git checkout -b feature/your-feature-name`).  
+3. Commit your changes (`git commit -m 'Add new feature'`).  
+4. Push to the branch (`git push origin feature/your-feature-name`).  
+5. Open a pull request.  
+
+---
+
+## **📜 License**  
+
+This project is licensed under the [MIT License](LICENSE).  
+
+---
+
+## **📞 Contact**  
+
+For further inquiries or support, reach out:  
+- **Nusrat Jahan Oishi**  
+  - ID: 20220104127  
+  - Email: nusratjahanoishi@gmail.com  
+  - GitHub: [Nusrat Jahan Oishi](https://github.com/nusratjahanoishi)  
+
+- **Sumaiya Islam Daina**  
+  - ID: 20220104115  
+  - Email: sumaiyaislamdaina@gmail.com  
+
+- **Asif Radoan**  
+  - ID: 20220104114  
+  - Email: asif.radoan@gmail.com  
