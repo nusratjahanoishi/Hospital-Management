@@ -1,9 +1,6 @@
 # Hospital Management System  
 
 <p align="center">
-    <a href="https://github.com/nusratjahanoishi/Hospital-Management/actions">
-      <img alt="Tests Passing" src="https://github.com/nusratjahanoishi/Hospital-Management/workflows/Test/badge.svg" />
-    </a>
     <a href="https://github.com/nusratjahanoishi/Hospital-Management/graphs/contributors">
       <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/nusratjahanoishi/Hospital-Management" />
     </a>
