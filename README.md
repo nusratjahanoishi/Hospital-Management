@@ -40,7 +40,7 @@ The **Hospital Management System** is a complete multi-hospital management solut
 
 | Name                     | ID           | Email                         | Role                           |
 |---------------------------|--------------|-------------------------------|--------------------------------|
-| Nusrat Jahan Oishi        | 20220104127  | nusratjahanoishi@gmail.com    | Full-stack Developer          |
+| Nusrat Jahan Oishi        | 20220104127  | oishinusrat359@gmail.com      | Full-stack Developer          |
 | Sumaiya Islam Daina       | 20220104115  | sumaiyaislamdaina@gmail.com   | Front-end Developer            |
 | Asif Radoan               | 20220104114  | asif.radoan@gmail.com         | Front-end Developer           |
 
@@ -163,7 +163,7 @@ This project is licensed under the [MIT License](LICENSE).
 For further inquiries or support, reach out:  
 - **Nusrat Jahan Oishi**  
   - ID: 20220104127  
-  - Email: nusratjahanoishi@gmail.com  
+  - Email: oishinusrat359@gmail.com  
   - GitHub: [Nusrat Jahan Oishi](https://github.com/nusratjahanoishi)  
 
 - **Sumaiya Islam Daina**  
