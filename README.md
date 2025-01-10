@@ -18,7 +18,7 @@
     </a>
 </p>
 
-![Hospital Management System](https://repository-images.githubusercontent.com/911555839/fb8b47ff-0716-4b53-82d5-3b16c6d9f87f)  
+![Hospital Management System](https://github.com/nusratjahanoishi/Hospital-Management/blob/main/green-healthcare-logo-design-with-human-life-symbol-illustration-concept-vector-fotor-2025011111310.png?raw=true)  
 
 The **Hospital Management System** is a complete multi-hospital management solution designed to streamline hospital operations and enhance patient care. Built with **PHP** and **MySQL**, this system is scalable, user-friendly, and optimized for seamless hospital workflows.  
 
