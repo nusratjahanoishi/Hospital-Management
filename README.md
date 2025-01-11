@@ -17,7 +17,7 @@
 
 ![Hospital Management System](https://github.com/nusratjahanoishi/Hospital-Management/blob/main/green-healthcare-logo-design-with-human-life-symbol-illustration-concept-vector-fotor-2025011111310.png?raw=true)  
 
-The **Hospital Management System** is a complete multi-hospital management solution designed to streamline hospital operations and enhance patient care. Built with **PHP** and **MySQL**, this system is scalable, user-friendly, and optimized for seamless hospital workflows.  
+The **Hospital Management System** is a complete hospital management system designed to streamline hospital operations and enhance patient care. Built with **Laravel** and **MySQL**, this system is scalable, user-friendly, and optimized for seamless hospital workflows.  
 
 ---
 
@@ -49,14 +49,14 @@ The **Hospital Management System** is a complete multi-hospital management solut
 ## **📄 Project Overview**  
 
 ### **Objective**  
-To build a reliable, efficient, and secure platform to manage multi-hospital operations, including patient records, staff management, appointments, and billing.  
+To build a reliable, efficient, and secure platform to manage hospital operations, including patient records, staff management, appointments, and billing.  
 
 ### **Target Audience**  
-Hospitals, clinics, and healthcare administrators looking for a streamlined digital management system.  
+Doctors and patients seeking a streamlined digital management system for efficient healthcare delivery.  
 
 ### **Key Features and Benefits**  
 - **🩺 Patient Management**: Centralized repository for patient information, medical history, and prescriptions.  
-- **👩‍⚕️ Staff Management**: Easy allocation and management of staff roles and schedules.  
+- **👩‍⚕️ Doctors Management**: Easy allocation and management of Doctors roles and schedules.  
 - **📅 Appointment Scheduling**: Optimized booking system for patients and doctors.  
 - **💳 Billing and Payment**: Automated billing system for quick and accurate invoices.  
 - **📊 Reports and Analytics**: Generate insightful reports to assist in decision-making.  
@@ -68,9 +68,9 @@ Hospitals, clinics, and healthcare administrators looking for a streamlined digi
 | Component       | Technology              |
 |------------------|--------------------------|
 | **Frontend**    | HTML, CSS, JavaScript   |
-| **Backend**     | PHP                     |
+| **Backend**     | Laravel                     |
 | **Database**    | MySQL                   |
-| **Framework**   | Laravel (Optional)      |
+| **Framework**   | PHP      |
 | **Deployment**  | XAMPP/WAMP for local servers |
 
 ---
@@ -78,7 +78,7 @@ Hospitals, clinics, and healthcare administrators looking for a streamlined digi
 ## **🚀 Project Features**  
 
 ### **Admin Panel**  
-- Add, edit, and delete hospitals, staff, and departments.  
+- Add, edit, and delete Doctors, and departments.  
 - Monitor system usage and performance.  
 - Generate system-wide reports.  
 
@@ -126,7 +126,7 @@ Hospitals, clinics, and healthcare administrators looking for a streamlined digi
 - Develop user authentication and role-based access control.  
 
 ### **Phase 2**  
-- Implement patient and staff management features.  
+- Implement patient and Doctors management features.  
 - Create appointment scheduling and billing modules.  
 
 ### **Phase 3**  
