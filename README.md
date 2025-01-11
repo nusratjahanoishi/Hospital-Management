@@ -141,7 +141,7 @@ Doctors and patients seeking a streamlined digital management system for efficie
 ---
 
 ## **🌐 Demo and Design** 
-- **Figma Design**: [Hospital Management Figma Design](https://www.figma.com/design/haGhkv4oEHuJBl6NsBUIdy/Hospital-management)
+
 Check out the live demo of the system at: [Hospital Management System](http://localhost/Hospital-Management)  
 
 ---
