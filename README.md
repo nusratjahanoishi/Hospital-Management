@@ -17,7 +17,7 @@
 
 ![Hospital Management System](https://github.com/nusratjahanoishi/Hospital-Management/blob/main/green-healthcare-logo-design-with-human-life-symbol-illustration-concept-vector-fotor-2025011111310.png?raw=true)  
 
-The **Hospital Management System** is a complete hospital management system designed to streamline hospital operations and enhance patient care. Built with **Laravel** and **MySQL**, this system is scalable, user-friendly, and optimized for seamless hospital workflows.  
+The **HealthCare Point** is a complete hospital management system designed to streamline hospital operations and enhance patient care. Built with **Laravel** and **MySQL**, this system is scalable, user-friendly, and optimized for seamless hospital workflows.  
 
 ---
 
