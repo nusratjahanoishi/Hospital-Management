@@ -1,4 +1,4 @@
-# Hospital Management System  
+# HealthCare Point  
 
 <p align="center">
     <a href="https://github.com/nusratjahanoishi/Hospital-Management/graphs/contributors">
@@ -29,7 +29,7 @@ The **HealthCare Point** is a complete hospital management system designed to st
 - [🚀 Project Features](#-project-features)  
 - [🔗 API Endpoints](#-api-endpoints)  
 - [📅 Milestones](#-milestones)  
-- [🌐 Demo](#-demo)  
+- [🌐 Demo and Design](#-demo-and-design)
 - [🤝 Contributing](#-contributing)  
 - [📜 License](#-license)  
 - [📞 Contact](#-contact)  
@@ -45,6 +45,11 @@ The **HealthCare Point** is a complete hospital management system designed to st
 | Asif Radoan               | 20220104114  | asif.radoan@gmail.com         | Front-end Developer           |
 
 ---
+## 🎨 UI Design  
+
+We are currently designing the user interface using Figma. You can view our mock UI here:  
+[Hospital Management Figma Design](https://www.figma.com/design/haGhkv4oEHuJBl6NsBUIdy/Hospital-management)
+
 
 ## **📄 Project Overview**  
 
@@ -135,8 +140,8 @@ Doctors and patients seeking a streamlined digital management system for efficie
 
 ---
 
-## **🌐 Demo**  
-
+## **🌐 Demo and Design** 
+- **Figma Design**: [Hospital Management Figma Design](https://www.figma.com/design/haGhkv4oEHuJBl6NsBUIdy/Hospital-management)
 Check out the live demo of the system at: [Hospital Management System](http://localhost/Hospital-Management)  
 
 ---
