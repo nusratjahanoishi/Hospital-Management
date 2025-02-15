@@ -21,7 +21,7 @@
     <header>
 
         <!-- logo name  -->
-        <a href="#" class="logo"><span>P</span>atient <span>C</span>ares.</a>
+        <a href="#" class="logo"><span>H</span>ealth <span>C</span>are.</a>
 
         <!-- navbar link  -->
         <nav class="navbar">
@@ -53,7 +53,7 @@
             <!-- home heading  -->
             <div class="content">
                 <h1><span>Stay</span> Safe, <span>Stay</span> Healthy.</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, officiis.</p>
+                <p>Providing compassionate and quality healthcare services for a healthier community..</p>
                 <a href="#"><button class="button">read more</button></a>
             </div>
         </div>
