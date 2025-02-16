@@ -96,16 +96,13 @@ Doctors and patients seeking a streamlined digital management system for efficie
 
 #### **Patients**  
 - Online appointment booking.  
-- Medical history access.  
-- View and download bills.  
-
-#### **Pharmacy**  
-- Medicine inventory management.  
-- Prescription-based medicine dispensing.  
+- Medical history access.
+- view bills
+ 
 
 #### **Billing System**  
 - Generate invoices automatically.  
-- Manage online and offline payments.  
+- Manage bills and payments.  
 
 ---
 
@@ -132,11 +129,11 @@ Doctors and patients seeking a streamlined digital management system for efficie
 
 ### **Phase 2**  
 - Implement patient and Doctors management features.  
-- Create appointment scheduling and billing modules.  
+- Create appointment scheduling.  
 
 ### **Phase 3**  
 - Optimize system performance.  
-- Add analytics and reporting features.  
+- Add analytics and reporting features and billing.  
 
 ---
 
