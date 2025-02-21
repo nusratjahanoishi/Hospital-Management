@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patient Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -48,10 +49,10 @@
                 <a href="{{ url('/patient/dashboard') }}" class="block py-2 px-4 rounded hover:bg-blue-700">Dashboard</a>
             </li>
             <li class="mb-2">
-                <a href="{{ url('/patient/appointments') }}" class="block py-2 px-4 rounded hover:bg-blue-700">My Appointments</a>
+                <a href="{{route('patient.doctor.index') }}" class="block py-2 px-4 rounded hover:bg-blue-700">Doctors</a>
             </li>
             <li class="mb-2">
-                <a href="{{ url('/patient/reports') }}" class="block py-2 px-4 rounded hover:bg-blue-700">Medical Reports</a>
+                <a href="{{ route('patient.appointment.list',Auth::user()->id) }}" class="block py-2 px-4 rounded hover:bg-blue-700">Appointment Schedule</a>
             </li>
             <li class="mb-2">
                 <a href="{{ url('/patient/profile') }}" class="block py-2 px-4 rounded hover:bg-blue-700">Profile</a>
@@ -72,7 +73,7 @@
 
         <!-- Page Content -->
         <div class="p-6">
-            <table>
+            {{-- <table>
                 <thead>
                     <caption class="mt-2 mb-3"><h2>Patient List</h2></caption>
                     <tr>
@@ -95,8 +96,21 @@
                 @endforeach
                 
                 </tbody>
-            </table>
+            </table> --}}
             @yield('content')
+        </div>
+        <div id="alert-container">
+            @if (session('success'))
+                <div id="success-alert" class="fixed bottom-5 right-5 max-w-sm bg-green-500 text-white p-3 rounded-lg shadow-lg">
+                    {{ session('success') }}
+                </div>
+            @endif
+        
+            @if (session('error'))
+                <div id="error-alert" class="fixed bottom-5 right-5 max-w-sm bg-red-500 text-white p-3 rounded-lg shadow-lg">
+                    {{ session('error') }}
+                </div>
+            @endif
         </div>
     </div>
 
