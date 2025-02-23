@@ -73,6 +73,9 @@ Route::get('/doctor/delete/{id}', [DoctorController::class, 'delete'])->name('do
 
 
 //Admin
+Route::get('/admin/register', function() {
+    return view('layout.auth.admin.register');
+});
 Route::get('/admin/login', [AdminAuthController::class, 'showLoginForm'])->name('admin.login');
 
 Route::post('/admin/register', [AdminAuthController::class, 'register'])->name('admin.register');
