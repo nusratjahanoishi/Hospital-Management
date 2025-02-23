@@ -27,7 +27,7 @@
         <nav class="navbar">
             <ul>
                 <li><a href="{{ url('/') }}">Home</a></li>
-                <li><a href="{{ url('/admin/register') }}">admin</a></li>
+                <li><a href="{{ route('admin.login') }}">Admin</a></li>
                 <li><a href="{{ url('/doctor/register') }}">Doctor</a></li>
                 <li><a href="#review">review</a></li>
                 <li><a href="{{ url('/register') }}">Patient</a></li>
