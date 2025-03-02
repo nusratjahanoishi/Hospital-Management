@@ -12,53 +12,53 @@
     <!-- Custom Styles -->
     <style>
         body {
-            background-color: #f3f4f6;
-        }
-    </style>
-     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            background-color: #f8fafc;
+            font-family: 'Poppins', sans-serif;
         }
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         th, td {
             border: 1px solid #ddd;
-            padding: 10px;
+            padding: 12px;
             text-align: left;
         }
         th {
-            background-color: #4CAF50;
+            background-color: #6D28D9;
             color: white;
+            font-weight: bold;
         }
         tr:nth-child(even) {
-            background-color: #f2f2f2;
+            background-color: #f3f4f6;
         }
     </style>
 </head>
 <body class="flex">
 
     <!-- Sidebar -->
-    <div class="w-64 bg-blue-900 text-white min-h-screen p-5">
+    <div class="w-64 bg-purple-900 text-white min-h-screen p-5 shadow-xl">
         <h2 class="text-2xl font-bold text-center mb-5">Patient Panel</h2>
         <ul>
             <li class="mb-2">
-                <a href="{{ url('/patient/dashboard') }}" class="block py-2 px-4 rounded hover:bg-blue-700">Dashboard</a>
+                <a href="{{ url('/patient/dashboard') }}" class="block py-3 px-4 rounded-lg hover:bg-purple-700 transition">Dashboard</a>
             </li>
             <li class="mb-2">
-                <a href="{{route('patient.doctor.index') }}" class="block py-2 px-4 rounded hover:bg-blue-700">Doctors</a>
+                <a href="{{route('patient.doctor.index') }}" class="block py-3 px-4 rounded-lg hover:bg-purple-700 transition">Doctors</a>
             </li>
             <li class="mb-2">
-                <a href="{{ route('patient.appointment.list',Auth::user()->id) }}" class="block py-2 px-4 rounded hover:bg-blue-700">Appointment Schedule</a>
+                <a href="{{ route('patient.appointment.list',Auth::user()->id) }}" class="block py-3 px-4 rounded-lg hover:bg-purple-700 transition">Appointment Schedule</a>
             </li>
             <li class="mb-2">
-                <a href="{{ url('/patient/profile') }}" class="block py-2 px-4 rounded hover:bg-blue-700">Profile</a>
+                <a href="{{ url('/patient/profile') }}" class="block py-3 px-4 rounded-lg hover:bg-purple-700 transition">Profile</a>
             </li>
             <li class="mb-2">
-                <a href="{{ url('/logout') }}" class="block py-2 px-4 rounded hover:bg-red-600">Logout</a>
+                <a href="{{ url('/logout') }}" class="block py-3 px-4 rounded-lg hover:bg-red-600 transition">Logout</a>
             </li>
         </ul>
     </div>
@@ -66,53 +66,29 @@
     <!-- Main Content -->
     <div class="flex-1">
         <!-- Navbar -->
-        <div class="bg-white shadow-md py-4 px-6 flex justify-between items-center">
-            <h1 class="text-xl font-semibold">Welcome, {{ Auth::user()->name ?? 'Patient' }}</h1>
-            <a href="{{ url('/patient/profile') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">My Profile</a>
+        <div class="bg-white shadow-md py-4 px-6 flex justify-between items-center border-b">
+            <h1 class="text-xl font-semibold text-purple-800">Welcome, {{ Auth::user()->name ?? 'Patient' }}</h1>
+            <a href="{{ url('/patient/profile') }}" class="bg-purple-600 text-white px-5 py-2 rounded-lg hover:bg-purple-700 transition">My Profile</a>
         </div>
 
         <!-- Page Content -->
         <div class="p-6">
-            {{-- <table>
-                <thead>
-                    <caption class="mt-2 mb-3"><h2>Patient List</h2></caption>
-                    <tr>
-                        <th>#SL</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Role</th>
-                        <th>Created At</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach ($response as $item)
-                    <tr>
-                        <td>{{ $loop->iteration }}</td>
-                        <td>{{ $item->name }}</td>
-                        <td>{{ $item->email }}</td>
-                        <td>{{ $item->role }}</td> <!-- Capitalize first letter -->
-                        <td>{{ $item->created_at->format('d-m-Y') }}</td>
-                    </tr>
-                @endforeach
-                
-                </tbody>
-            </table> --}}
             @yield('content')
         </div>
+        
         <div id="alert-container">
             @if (session('success'))
-                <div id="success-alert" class="fixed bottom-5 right-5 max-w-sm bg-green-500 text-white p-3 rounded-lg shadow-lg">
+                <div id="success-alert" class="fixed bottom-5 right-5 max-w-sm bg-green-500 text-white p-4 rounded-lg shadow-lg fade-in">
                     {{ session('success') }}
                 </div>
             @endif
         
             @if (session('error'))
-                <div id="error-alert" class="fixed bottom-5 right-5 max-w-sm bg-red-500 text-white p-3 rounded-lg shadow-lg">
+                <div id="error-alert" class="fixed bottom-5 right-5 max-w-sm bg-red-500 text-white p-4 rounded-lg shadow-lg fade-in">
                     {{ session('error') }}
                 </div>
             @endif
         </div>
     </div>
-
 </body>
 </html>
