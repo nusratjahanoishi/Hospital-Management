@@ -19,7 +19,7 @@
         @foreach($appointments as $appointment)
         <tr>
             <td>{{ $appointment->doctor->name }}</td>
-            <td>{{ $appointment->patient->name }}</td>
+            <td>{{ $appointment->patient->name??$appointment->patient_id}}</td>
             <td>{{ $appointment->appointment_date }}</td>
             <td>{{ $appointment->time_slot }}</td>
             <td>

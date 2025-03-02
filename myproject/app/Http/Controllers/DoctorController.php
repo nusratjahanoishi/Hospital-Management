@@ -90,11 +90,11 @@ class DoctorController extends Controller
 
     public function delete($id)
     {
-        $setting = DoctorExpart::find($id);
+        $setting =Doctor::find($id);
         if (!$setting) {
-            return redirect()->back()->with('error', 'Doctor Expart  not found.');
+            return redirect()->back()->with('error', 'Doctor Profile  not found.');
         }
         $setting->delete();
-        return redirect()->back()->with('success', 'Doctor Expart  deleted successfully.');
+        return redirect()->back()->with('success', 'Doctor Profile  deleted successfully.');
     }
 }

@@ -11,22 +11,20 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('appointments', function (Blueprint $table) {
+        Schema::create('tests', function (Blueprint $table) {
             $table->id();
-            $table->integer('patient_id');
-            $table->integer('doctor_id');
-            $table->date('appointment_date');
-            $table->string('time_slot');
-            $table->enum('status', ['pending', 'confirmed', 'completed', 'cancelled'])->default('pending');
+            $table->string('test_name')->nullable();
+            $table->integer('price')->nullable();
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }
-   
+
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('appointments');
+        Schema::dropIfExists('tests');
     }
 };
