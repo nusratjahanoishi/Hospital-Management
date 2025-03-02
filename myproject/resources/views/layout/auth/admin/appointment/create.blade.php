@@ -4,23 +4,11 @@
 <div class="bg-white max-w-4xl mx-auto p-8 rounded-lg shadow-lg w-full mt-10">
     <div class="flex justify-between items-center mb-6">
         <h2 class="text-2xl font-semibold text-gray-700">Doctor Appointment Booking</h2>
-        <a href="{{ route('appointments.create') }}" class="px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition duration-300">
-            <i class="fas fa-list mr-1"></i> Book Appointment
-        </a>
     </div>
 
     <form action="{{ route('appointments.store') }}" method="POST" class="space-y-4">
         @csrf
 
-        <!-- Doctor Selection -->
-        <div>
-              <label class="block text-gray-600 font-medium">Select Patient:</label>
-              <select name="patient_id" id="chosen-select" class="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:ring focus:ring-blue-300">
-              @foreach($patients as $patient)
-              <option value="{{ $patient->id }}">{{ $patient->name }}</option>
-              @endforeach
-            </select>
-        </div>
         <div>
             <label class="block text-gray-600 font-medium">Select Doctor:</label>
             <select name="doctor_id" id="chosen-select1" class="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:ring focus:ring-blue-300">
@@ -34,6 +22,9 @@
         <div>
             <label class="block text-gray-600 font-medium">Appointment Date:</label>
             <input type="date" name="appointment_date" class="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:ring focus:ring-blue-300" required>
+        </div>
+        <div>
+            <input type="hidden" name="patient_id" class="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:ring focus:ring-blue-300" value="{{ random_int(10000000, 999999999) }}">
         </div>
 
         <!-- Time Slot -->

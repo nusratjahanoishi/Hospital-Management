@@ -68,12 +68,22 @@
                     Expert</a>
             </li>
             <li class="mb-2">
-                <a href="{{ route('appointments.index') }}"
-                    class="block py-2 px-4 rounded hover:bg-blue-700">Appointments</a>
+                <a href="{{ route('appointments.create') }}"
+                    class="block py-2 px-4 rounded hover:bg-blue-700">Appointment</a>
             </li>
             <li class="mb-2">
-                <a href="{{ url('/admin/reports') }}" class="block py-2 px-4 rounded hover:bg-blue-700">Reports</a>
+                <a href="{{ route('appointments.index') }}"
+                    class="block py-2 px-4 rounded hover:bg-blue-700">Appointments List</a>
             </li>
+            <li class="mb-2">
+                <a href="{{ route('admin.test.index') }}"
+                    class="block py-2 px-4 rounded hover:bg-blue-700">Test</a>
+            </li>
+            <li class="mb-2">
+                <a href="{{ route('admin.report.index') }}"
+                    class="block py-2 px-4 rounded hover:bg-blue-700">Reports</a>
+            </li>
+          
             <li class="mb-2">
                 <a href="{{ url('/admin/settings') }}" class="block py-2 px-4 rounded hover:bg-blue-700">Settings</a>
             </li>
@@ -87,8 +97,8 @@
         <!-- Navbar -->
         <div class="bg-white shadow-md py-4 px-6 flex justify-between items-center">
             <h1 class="text-xl font-semibold">Welcome, Admin {{ Auth::user()->name ?? 'Admin' }}</h1>
-            <a href="{{ url('/admin/profile') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">My
-                Profile</a>
+            {{-- <a href="{{ url('/admin/profile') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">My
+                Profile</a> --}}
         </div>
 
         <!-- Page Content -->
@@ -115,7 +125,7 @@
         setTimeout(function () {
             document.getElementById('success-alert')?.remove();
             document.getElementById('error-alert')?.remove();
-        }, 1000); // Change from 500ms to 3000ms (3 seconds)
+        }, 10000); // Change from 500ms to 3000ms (3 seconds)
     </script>
     
 </body>

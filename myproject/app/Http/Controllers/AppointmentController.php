@@ -17,8 +17,7 @@ class AppointmentController extends Controller
         public function create()
         {
             $doctors = User::where('role', 'doctor')->get();
-            $patients = User::where('role', 'patient')->get();
-            return view('layout.auth.admin.appointment.create', compact('doctors','patients'));
+            return view('layout.auth.admin.appointment.create', compact('doctors'));
         }
     
         public function store(Request $request)
@@ -28,14 +27,26 @@ class AppointmentController extends Controller
                 'appointment_date' => 'required|date',
                 'time_slot' => 'required',
             ]);
+    if($request->patient_id==null){
+        Appointment::create([
+            'patient_id' => auth()->id(),
+            'doctor_id' => $request->doctor_id,
+            'appointment_date' => $request->appointment_date,
+            'time_slot' => $request->time_slot,
+            'status' => 'pending',
+        ]);
+    }
     
-            Appointment::create([
-                'patient_id' => auth()->id(),
-                'doctor_id' => $request->doctor_id,
-                'appointment_date' => $request->appointment_date,
-                'time_slot' => $request->time_slot,
-                'status' => 'pending',
-            ]);
+    else{
+        Appointment::create([
+            'patient_id' =>$request->patient_id,
+            'doctor_id' => $request->doctor_id,
+            'appointment_date' => $request->appointment_date,
+            'time_slot' => $request->time_slot,
+            'status' => 'confirmed',
+        ]);
+    }
+           
     
             return redirect()->route('appointments.index')->with('success', 'Appointment booked successfully.');
         }
