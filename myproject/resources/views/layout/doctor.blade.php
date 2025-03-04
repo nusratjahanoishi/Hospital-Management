@@ -59,13 +59,6 @@
                 <a href="{{ route('doctor.index') }}" class="block py-2 px-4 rounded hover:bg-blue-700">View Profile</a>
             </li>
             @endif
-            
-            <li class="mb-2">
-                <a href="{{ url('/doctor/appointments') }}" class="block py-2 px-4 rounded hover:bg-blue-700">Appointments</a>
-            </li>
-            <li class="mb-2">
-                <a href="{{ url('/doctor/reports') }}" class="block py-2 px-4 rounded hover:bg-blue-700">Medical Reports</a>
-            </li>
             <li class="mb-2">
                 <a href="{{ url('/doctor/logout') }}" class="block py-2 px-4 rounded hover:bg-red-600">Logout</a>
             </li>
