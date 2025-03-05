@@ -83,10 +83,6 @@
                 <a href="{{ route('admin.report.index') }}"
                     class="block py-2 px-4 rounded hover:bg-blue-700">Reports</a>
             </li>
-          
-            <li class="mb-2">
-                <a href="{{ url('/admin/settings') }}" class="block py-2 px-4 rounded hover:bg-blue-700">Settings</a>
-            </li>
             <li class="mb-2">
                 <a href="{{ url('/admin/logout') }}" class="block py-2 px-4 rounded hover:bg-red-600">Logout</a>
             </li>
