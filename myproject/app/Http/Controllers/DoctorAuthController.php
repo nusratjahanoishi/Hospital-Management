@@ -61,7 +61,7 @@ class DoctorAuthController extends Controller
         if (Auth::check()) {
             return redirect()->route('doctor.dashboard');
         }
-        
+
         $response = $this->doctorAuthService->login($request->only('email', 'password'));
 
         if (!Auth::check()) {

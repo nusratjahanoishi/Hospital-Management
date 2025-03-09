@@ -48,7 +48,7 @@ class DoctorController extends Controller
             : ( Doctor::where('user_id', $request->user_id)->count()
                   ? redirect()->route('doctor.create')->with('error', 'A doctor profile with this user id already exists.')
                   : new Doctor() );
-        
+
 
             if ($request->hasFile('profile_picture')) {
                 $image = $request->file('profile_picture');
