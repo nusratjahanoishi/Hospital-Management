@@ -24,7 +24,7 @@ use App\Http\Controllers\TestController;
 */
 
 Route::get('/', function () {
-    return view('layout.auth.register');
+    return view('landing'); // this is the landing page view
 });
 
 // Registration routes
